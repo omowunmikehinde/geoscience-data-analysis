@@ -1,58 +1,90 @@
-# geoscience-data-analysis
-Python-based analysis and visualization of geological and geophysical data.
-
 # Geological and Geophysical Data Analysis with Python
 
 ## Overview
 
-This project demonstrates a Python-based workflow for the analysis, quality control, visualization, and interpretation of geological and geophysical data.
+This project demonstrates a reproducible Python workflow for the quality control, statistical analysis, visualization, and interpretation of geological and geophysical data.
 
-The project uses a synthetic geoscience dataset designed to represent measurements that may be encountered in geological and geophysical exploration workflows. The analysis focuses on reproducible data processing and scientific interpretation rather than proprietary or confidential datasets.
+The project uses a synthetic geoscience dataset representing measurements that may be encountered in geological and geophysical exploration workflows. It was developed as an independent portfolio project to demonstrate scientific data analysis and Python skills.
 
 ## Objectives
 
-* Inspect and assess the quality of geoscience data
-* Perform basic data cleaning and validation
-* Explore relationships between geological and geophysical variables
-* Generate descriptive statistics and visualizations
-* Identify patterns and potential relationships within the dataset
-* Communicate analytical results through clear scientific documentation
+- Inspect and validate geoscience data
+- Perform basic data quality checks
+- Calculate descriptive statistics
+- Explore relationships between geological and geophysical variables
+- Compare measurements across geological units
+- Produce scientific visualizations
+- Document a reproducible analytical workflow
 
 ## Dataset
 
-The dataset contains simulated geological and geophysical measurements, including:
+The synthetic dataset contains:
 
-* Sample identifiers
-* Geographic coordinates
-* Elevation
-* Magnetic intensity
-* Radiometric potassium (K)
-* Radiometric uranium (U)
-* Radiometric thorium (Th)
-* Geological unit classifications
+- Sample identifiers
+- Latitude and longitude
+- Elevation
+- Magnetic intensity
+- Potassium concentration
+- Uranium concentration
+- Thorium concentration
+- Geological unit
 
-The dataset is synthetic and is intended for demonstration and educational purposes.
+The dataset is synthetic and does not contain confidential, proprietary, or restricted information.
 
 ## Tools and Technologies
 
-* **Python**
-* **Pandas** — data manipulation and quality control
-* **NumPy** — numerical analysis
-* **Matplotlib** — data visualization
-* **Jupyter Notebook** — interactive analysis
+- **Python**
+- **Pandas** — data manipulation and analysis
+- **Matplotlib** — data visualization
+- **Jupyter/Google Colab** — analysis environment
+- **GitHub** — version control and project documentation
 
-## Workflow
+## Analytical Workflow
 
-The analysis follows a reproducible workflow:
+The project follows these steps:
 
-1. Load and inspect the dataset
-2. Check data types and missing values
-3. Perform basic data quality checks
+1. Load the geoscience dataset
+2. Inspect the structure and data types
+3. Check for missing and duplicate records
 4. Calculate descriptive statistics
-5. Explore relationships between variables
-6. Generate visualizations
-7. Interpret observed patterns
-8. Document the results
+5. Group observations by geological unit
+6. Calculate correlations between numerical variables
+7. Generate geoscience visualizations
+8. Document the analytical results
+
+## Results and Visualizations
+
+### 1. Correlation Matrix
+
+The correlation matrix provides an exploratory view of relationships between the numerical variables in the synthetic dataset.
+
+![Correlation Matrix](figures/correlation_matrix.png)
+
+### 2. Magnetic Intensity by Geological Unit
+
+This visualization compares magnetic intensity across the geological units represented in the dataset.
+
+![Magnetic Intensity by Geological Unit](figures/magnetic_by_geological_unit.png)
+
+### 3. Potassium–Thorium Relationship
+
+This scatter plot illustrates the relationship between potassium and thorium measurements across the geological units.
+
+![Potassium–Thorium Relationship](figures/potassium_thorium.png)
+
+## Interpretation
+
+The analysis demonstrates how geological and geophysical variables can be explored quantitatively using Python.
+
+The visualizations provide examples of:
+
+- Exploratory data analysis
+- Geological-unit comparison
+- Correlation analysis
+- Geophysical data visualization
+- Scientific interpretation
+
+Because the dataset is synthetic, the observed relationships are intended to demonstrate analytical methods rather than represent real-world geological conclusions.
 
 ## Project Structure
 
@@ -62,18 +94,18 @@ geoscience-data-analysis/
 ├── data/
 │   └── geoscience_sample.csv
 │
-├── notebooks/
-│   └── geoscience_analysis.ipynb
+├── figures/
+│   ├── correlation_matrix.png
+│   ├── magnetic_by_geological_unit.png
+│   └── potassium_thorium.png
 │
 ├── src/
 │   └── analysis.py
 │
-├── figures/
-│   └── generated_visualizations
-│
-└── README.md
-```
+├── README.md
+└── results.md
 
+```
 ## Key Skills Demonstrated
 
 * Scientific data analysis
@@ -84,10 +116,8 @@ geoscience-data-analysis/
 * Python programming
 * Reproducible analytical workflows
 * Technical documentation
+* Statistical analysis
 
-## Disclaimer
-
-This project is an independent portfolio project. The dataset is synthetic and does not contain confidential, proprietary, or restricted information.
 
 ## Author
 
